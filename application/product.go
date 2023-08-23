@@ -52,8 +52,8 @@ type Product struct {
 }
 
 // GetId implements ProductInterface.
-func (*Product) GetId() string {
-	panic("unimplemented")
+func (p *Product) GetId() string {
+	return p.ID
 }
 
 func NewProduct() *Product {
